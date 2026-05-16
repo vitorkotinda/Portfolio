@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js">
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link id="favicon" rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png" />
+    <meta charset="UTF-8" />
+    <script src="https://www.jsdelivr.com/package/npm/@tsparticles/particles">
+    </script>
+    <title>
+      Meu Portfolio
+    </title>
+  </head>
+  <body>
+    <div id="navbar">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">          Portfólio
+</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">                Página Inicial
+</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">                Habilidades
+</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">                Educação
+</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">                Contato
+</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="particles-js">
+      </div>
+      <script src="particles.js">
+      </script>
+      <script src="app.js">
+      </script>
+    </div>
+    <section class="home" id="home">
+      <div id="texts-welcome">
+        <h1 id="text1-welcome">
+          Seja Bem Vindo Ao Meu Portfólio!
+        </h1>
+      </div>
+      <div id="text-myself">
+        <h3 id="nome">
+          Eu sou Vitor Kotinda
+        </h3>
+        <h4 id="conhecimento">
+          Sei Sobre:
+          <span id="typed"></span>
+        </h4>
+      </div>
+      <div id="ir-baixo">
+        <a href="#sobre" class="btn-sobre">        <span>        Sobre Mim
+</span>
+        <i class="fas fa-arrow-circle-down"></i>
+</a>
+      </div>
+      <div class="social-links">
+        <a class="github" aria-label="GitHub" href="https://github.com/vitorkotinda" target="_blank">        <i class="fab fa-github"></i>
+</a>
+        <a class="dev" aria-label="Dev" href="https://dev.to/vitorkotinda" target="_blank">        <i class="fab fa-dev"></i>
+</a>
+      </div>
+    </section>
+    <div id="espaco" style="height: 700px;">
+    </div>
+    <section class="sobre" id="sobre">
+      <div id="sobre-p1">
+        <h2 class="heading">
+          <i class="fas fa-user-alt"></i>
+          Sobre
+          <span>          Mim
+</span>
+        </h2>
+      </div>
+      <div id="ex-sobre">
+        <h3>
+          <span>          Sou Vitor Kotinda
+</span>
+        </h3>
+        <h5>
+          Um desenvolvedor de 12 anos, que tem conhecimento em:
+          <hr />
+          HTML
+          <hr />
+          CSS
+          <hr />
+          JS(ainda aprendendo)
+        </h5>
+        <h5>
+          <span>          Email:
+</span>
+          vilor500@gmail.com
+        </h5>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+      </script>
+      <style>
+        #text1-welcome {
+color: rgba(0,0,0,0.6);
+text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
+text-align: center;
+}
+
+#nome{
+    text-align: center;    
+}
+
+#conhecimento{
+    text-align: center
+}
+.btn-sobre {
+  display: inline-flex;
+  align-items: center;
+  background-color: #000080; /* Azul escuro */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: sans-serif;
+  gap: 10px;
+}
+.social-links {
+  display: flex;       /* Alinha em linha */
+  gap: 15px;          /* Espaço entre os ícones */
+  justify-content: center; /* Centraliza na tela */
+  padding: 20px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  background-color: #0e0e1a; /* Fundo escuro do círculo */
+  border-radius: 50%;        /* Faz o círculo perfeito */
+  display: flex;
+  align-items: center;       /* Centraliza o ícone verticalmente */
+  justify-content: center;    /* Centraliza o ícone horizontalmente */
+  color: #00fbff;            /* Cor ciano/neon dos ícones */
+  text-decoration: none;
+  font-size: 22px;
+  transition: all 0.3s ease; /* Animação suave para o hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Efeito ao passar o mouse (Hover) */
+.icon:hover {
+  background-color: #00fbff; /* Inverte as cores */
+  color: #0e0e1a;
+  transform: translateY(-5px); /* Dá um leve pulinho */
+  box-shadow: 0 0 20px rgba(0, 251, 255, 0.6); /* Brilho neon */
+}
+#tsparticles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Fica atrás de todo o conteúdo */
+  background-color: #ffffff; /* Cor de fundo da sua página */
+}
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #f3f3f3; /* Cor de fundo suave */
+  z-index: -1; /* Joga para trás do conteúdo */
+  top: 0;
+  left: 0;
+}
+#ir-baixo{
+   align-items: center;
+   text-align: center;
+}
+#sobre-p1{
+    text-align: center;
+    align-items: center;
+}
+.reveal {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.reveal span {
+  display: block;
+  transform: translateY(100%);
+  transition: transform 1s ease;
+}
+
+.reveal.active span {
+  transform: translateY(0);
+}
+
+#ex-sobre{
+    text-align: center;
+}
+      </style>
+      <script>
+        var typed = new Typed(&#39;#typed&#39;, {
+  strings: [&#39;Desenvolvimento Web&#39;, &#39;Criação de Logos&#39;, &#39;UI/UX&#39;], // As frases que vão alternar
+  typeSpeed: 60,       // Velocidade de digitação (em milissegundos)
+  backSpeed: 40,       // Velocidade de apagamento
+  backDelay: 1500,     // Tempo que o texto fica visível antes de apagar
+  loop: true           // Faz a animação rodar infinitamente
+});
+
+// Exemplo com biblioteca externa
+ScrollReveal().reveal(&#39;.reveal&#39;, { 
+  delay: 200, 
+  distance: &#39;50px&#39;, 
+  origin: &#39;bottom&#39; 
+});
+
+tsParticles.load(&#34;tsparticles&#34;, {
+  particles: {
+    number: {
+      value: 80, // Quantidade de pontos
+      density: {
+        enable: true,
+        area: 800
+      }
+    },
+    color: {
+      value: &#34;#000000&#34; // Cor dos pontos
+    },
+    links: {
+      enable: true,      // Habilita as linhas conectando
+      distance: 150,     // Distância máxima para conectar
+      color: &#34;#000000&#34;,  // Cor das linhas
+      opacity: 0.2,      // Transparência das linhas
+      width: 1
+    },
+    move: {
+      enable: true,
+      speed: 2,          // Velocidade do movimento
+      direction: &#34;none&#34;,
+      random: false,
+      straight: false,
+      outModes: &#34;out&#34;
+    },
+    size: {
+      value: { min: 1, max: 3 } // Tamanho dos pontos
+    },
+    opacity: {
+      value: 0.5
+    }
+  },
+  interactivity: {
+    events: {
+      onHover: {
+        enable: true,
+        mode: &#34;grab&#34; // As linhas &#34;grudam&#34; no mouse ao passar
+      },
+      onClick: {
+        enable: true,
+        mode: &#34;push&#34; // Adiciona mais partículas ao clicar
+      }
+    },
+    modes: {
+      grab: {
+        distance: 140,
+        links: {
+          opacity: 0.5
+        }
+      }
+    }
+  },
+  retina_detect: true
+});
+      </script>
+    </section>
+  </body>
+</html>
